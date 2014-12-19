@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>梵天科技OA管理系统</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/css/bootstrap-responsive.min.css" />
+		<link rel="stylesheet" href="__PUBLIC__/css/unicorn.main.css" />
+		<link rel="stylesheet" href="__PUBLIC__/css/unicorn.blue.css" class="skin-color" />
+        <link rel="stylesheet" href="__PUBLIC__/css/colorpicker.css" />
+		<link rel="stylesheet" href="__PUBLIC__/css/uniform.css" />
+		<link rel="stylesheet" href="__PUBLIC__/css/select2.css" />	
+		<link rel="icon" href="__PUBLIC__/img/favicon.ico" type="image/vnd.microsoft.icon">
+		<script src="__PUBLIC__/js/jquery.min.js"></script>
+		<script src="__PUBLIC__/js/excanvas.min.js"></script>
+		
+		<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+		<script src="__PUBLIC__/js/jquery.flot.min.js"></script>
+		<script src="__PUBLIC__/js/jquery.flot.resize.min.js"></script>
+		<script src="__PUBLIC__/js/jquery.peity.min.js"></script>
+		<script src="__PUBLIC__/js/fullcalendar.min.js"></script>
+		<script src="__PUBLIC__/js/unicorn.js"></script>
+		<script src="__PUBLIC__/js/unicorn.dashboard.js"></script>
+		<script src="__PUBLIC__/js/My97DatePicker/WdatePicker.js"></script>	
+	</head>
+	<body>
+		
+		<div id="header">
+            <h1 style="height:55px;width:700px;top:12px;background:url('__PUBLIC__/img/admin_logo.png') no-repeat scroll 0 0;"><a href="__APP__">梵天科技OA系统</a></h1>		
+		</div>
+
+		<div id="user-nav" class="navbar navbar-inverse">
+            <ul class="nav btn-group" >
+                <li class="btn btn-inverse" ><a title="" ><span class="text" style="font-size:12px;">admin&nbsp;&nbsp;欢迎使用OA管理系统</span></a></li>
+                <li class="btn btn-inverse"><a title="" href="{:U('Admin/Admin/password')}"><i class="icon icon-cog"></i> <span class="text" style="font-size:12px;">修改密码</span></a></li>
+                <li class="btn btn-inverse"><a title="" href="{:U('Home/Login/logout')}"><i class="icon icon-share-alt"></i> <span class="text" style="font-size:12px;">退出</span></a></li>
+            </ul>
+        </div>
+		<div id="sidebar">
+			<ul>	
+				<li><a href="{:U('Admin/Admin/leave')}"><i class="icon icon-pencil"></i> <span>考核列表</span></a></li>
+                <li class="submenu"><a href="{:U('Admin/business')}"><i class="icon icon-th-list"></i> <span>业务处理</span></a>
+                   <ul>
+						<li><a href="{:U('Admin/resouce')}">资源申请处理</a></li>
+						<li><a href="{:U('Admin/nchong')}">内充申请处理</a></li>
+						<li><a href="{:U('Admin/jfu')}">进服人员查看</a></li>
+					</ul> 
+				</li>
+				<li class="submenu"><a href="#"><i class="icon icon-user"></i> <span>用户设置</span></a>
+				    <ul>
+					    <li><a href="{:U('Admin/adduser')}">添加用户</a></li>
+					    <li><a href="{:U('Admin/userlist')}">查看用户列表</a></li>
+				    </ul>
+			    </li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

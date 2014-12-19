@@ -1,0 +1,31 @@
+				<div class="modal hide" id="myAlert" style="display: none; width:460px; margin: -250px 0 0 -230px;;" aria-hidden="true">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">×</button>
+						<h3>警告提示</h3>
+					</div>
+					<div class="modal-body">
+						<p>您确定要删除本条记录？</p>
+					</div>
+					<div class="modal-footer">
+						<a id="confirm" class="btn btn-primary" >确定</a>
+						<a href="#" class="btn" data-dismiss="modal">取消</a>
+					</div>
+				</div>
+
+				<div class="row-fluid">
+					<div id="footer" class="span12">
+                        2014 &copy; 长沙梵天网络科技
+					</div>
+				</div>
+
+				<script src="__PUBLIC__/admin/js/jquery.min.js"></script>
+				<script src="__PUBLIC__/admin/js/admin.js"></script>
+
+				<script type="text/javascript">
+					$(".href").click(function(){
+						var a = $(this).attr("a");
+						// alert(a);
+						$("#confirm").attr("href", a);
+
+					})
+				</script>
